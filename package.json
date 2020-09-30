@@ -1,0 +1,26 @@
+{
+  "name": "porygon",
+  "version": "0.0.1",
+  "description": "component library",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EmmaRamirez/porygon.git"
+  },
+  "keywords": [
+    "components",
+    "react",
+    "component-library",
+    "ui",
+    "ux"
+  ],
+  "author": "EmmaRamirez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EmmaRamirez/porygon/issues"
+  },
+  "homepage": "https://github.com/EmmaRamirez/porygon#readme"
+}
