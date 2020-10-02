@@ -19,14 +19,8 @@ Primary.args = {
     defaultValue: 'Button',
 };
 
-export const Secondary = Template.bind({});
-Secondary.args = {
-};
-
-export const Large = Template.bind({});
-Large.args = {
-};
-
-export const Small = Template.bind({});
-Small.args = {
+export const Ghost = Template.bind({});
+Ghost.args = {
+  children: <strong>Button</strong>,
+  ghost: true,
 };
