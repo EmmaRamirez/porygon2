@@ -7,5 +7,5 @@ export interface ButtonProps extends Partial<React.HTMLAttributes<HTMLButtonElem
 }
 
 export function Button(props: ButtonProps) {
-    return <button {...props} />
+    return <button data-testid='button' {...props} />
 }
