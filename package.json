@@ -8,7 +8,9 @@
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
     "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "chromatic": "npx chromatic",
+    "chromatic-skip": "npm run chromatic -- --auto-accept-changes"
   },
   "config": {
     "commitizen": {
