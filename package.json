@@ -6,7 +6,14 @@
   "scripts": {
     "test": "jest --coverage",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   },
   "repository": {
     "type": "git",
@@ -27,7 +34,11 @@
   "homepage": "https://github.com/EmmaRamirez/porygon#readme",
   "dependencies": {
     "@storybook/theming": "^6.0.22",
+    "commitizen": "^4.2.1",
+    "conventional-changelog": "^3.1.23",
+    "coveralls": "^3.1.0",
     "csx": "^10.0.1",
+    "cz-conventional-changelog": "^3.3.0",
     "jest": "^26.4.2",
     "react": "^17.0.0-rc.2",
     "react-dom": "^17.0.0-rc.2",
