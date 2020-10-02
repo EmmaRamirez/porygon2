@@ -1,13 +1,9 @@
 import React from 'react';
-import { Props } from 'types/Props';
+import { HTMLImageProps } from 'types/Props';
+// import { Props } from 'types/Props';
 import { useStyles } from 'utils';
 
-export type SpriteProps = Props<
-    {
-        sprite: string;
-    },
-    HTMLImageElement
->;
+export type SpriteProps = {sprite?: string} & HTMLImageProps;
 
 const spriteStyles = {
     base: {

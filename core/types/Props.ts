@@ -1,17 +1,11 @@
+import * as React from 'react';
 
+export type HTMlDivProps = React.HTMLAttributes<HTMLDivElement>;
 
+export type HTMLInputProps = React.InputHTMLAttributes<HTMLInputElement>;
+export type HTMLImageProps = React.ImgHTMLAttributes<HTMLImageElement>;
 
-export type Props<P, H> = P & React.HTMLProps<H>;
-
-
-type BaseProps = {red: string};
-
-
-type P = Props<BaseProps, HTMLButtonElement>;
-
-const p: P = {
-    red: 'stadfas',
-    style: {
-
-    }
+export interface BaseProps {
+    className?: string;
 }
+
