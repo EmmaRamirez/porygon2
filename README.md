@@ -1,7 +1,7 @@
 # porygon
 
 ```
-⚠️ This project is under construction. I would suggest not using it the API is sufficient. ⚠️
+⚠️ This project is under construction. I would suggest not using it until the API is sufficient. ⚠️
 ```
 
 [![Cov Status](https://img.shields.io/coveralls/github/emmaramirez/porygon?style=flat-square)](https://coveralls.io/github/EmmaRamirez/porygon?branch=master)
