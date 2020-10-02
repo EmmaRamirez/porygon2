@@ -1,20 +1,16 @@
 const path = require('path');
 
 module.exports = {
-	addons: [
-		{
-			name: '@storybook/addon-docs',
-			options: {
-				configureJSX: true,
-			},
-		},
-		'@storybook/addon-actions/register',
-		'@storybook/addon-links/register',
-		'@storybook/addon-knobs/register',
-	],
-	stories: ['../**/**/*.stories.@(js|jsx|mdx|ts|tsx)'],
-	webpackFinal: async (config) => {
+  "stories": [
+    "../core/**/*.stories.mdx",
+    "../core/**/*.stories.@(js|jsx|ts|tsx)"
+  ],
+  "addons": [
+    "@storybook/addon-links",
+    "@storybook/addon-essentials"
+  ],
+  webpackFinal: async (config) => {
 		config.resolve.modules.push(path.resolve(__dirname, '../core'));
 		return config;
 	},
-};
+}

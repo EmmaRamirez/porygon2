@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --coverage",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
-    "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md"
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "config": {
     "commitizen": {
@@ -33,30 +33,29 @@
   },
   "homepage": "https://github.com/EmmaRamirez/porygon#readme",
   "dependencies": {
-    "@storybook/theming": "^6.0.22",
+    "@types/react": "^16.9.50",
     "commitizen": "^4.2.1",
     "conventional-changelog": "^3.1.23",
     "coveralls": "^3.1.0",
     "csx": "^10.0.1",
     "cz-conventional-changelog": "^3.3.0",
     "jest": "^26.4.2",
-    "react": "^17.0.0-rc.2",
-    "react-dom": "^17.0.0-rc.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "semantic-release": "^17.1.2",
     "ts-jest": "^26.4.1",
-    "typescript": "^4.1.0-beta",
+    "typescript": "^4.0.3",
     "typestyle": "^2.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.11.6",
     "@storybook/addon-actions": "^6.0.22",
-    "@storybook/addon-docs": "^6.0.22",
     "@storybook/addon-essentials": "^6.0.22",
-    "@storybook/addon-knobs": "^6.0.22",
     "@storybook/addon-links": "^6.0.22",
     "@storybook/react": "^6.0.22",
+    "@testing-library/react": "^11.0.4",
+    "@types/jest": "^26.0.14",
     "babel-loader": "^8.1.0",
-    "react-is": "^16.13.1",
-    "@types/jest": "^26.0.14"
+    "react-is": "^16.13.1"
   }
 }
