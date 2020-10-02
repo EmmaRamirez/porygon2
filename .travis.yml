@@ -1,0 +1,10 @@
+language: node_js
+cache:
+  directories:
+    - ~/.npm
+node_js:
+  - '12'
+after_success:
+  - if [[ $TRAVIS_EVENT_TYPE != 'pull_request' ||  $TRAVIS_PULL_REQUEST_SLUG != $TRAVIS_REPO_SLUG ]]; then npm run chromatic; fi
+  - npm run semantic-release
+  - node node_modules/.bin/jest --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage
