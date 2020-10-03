@@ -1,12 +1,12 @@
 {
   "name": "porygon2",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "component library",
   "main": "index.js",
   "scripts": {
     "test": "jest --coverage",
     "semantic-release": "semantic-release",
-    "version": "npx conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md",
+    "version": "npx conventional-changelog-cli -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "chromatic": "npx chromatic",
