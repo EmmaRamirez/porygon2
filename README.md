@@ -4,7 +4,7 @@
 ⚠️ This project is under construction. I would suggest not using it until the API is sufficient. ⚠️
 ```
 
-[![Build Status](https://img.shields.io/travis/emmaramirez/porygon?style=flat-square)](https://img.shields.io/travis/emmaramirez/porygon?style=flat-square) [![Cov Status](https://img.shields.io/coveralls/github/EmmaRamirez/porygon?style=flat-square)](https://coveralls.io/github/EmmaRamirez/porygon?branch=master)
+[![Build Status](https://img.shields.io/travis/emmaramirez/porygon?style=flat-square)](https://img.shields.io/travis/emmaramirez/porygon?style=flat-square) [![Cov Status](https://img.shields.io/coveralls/github/EmmaRamirez/porygon?style=flat-square)](https://coveralls.io/github/EmmaRamirez/porygon?branch=master) [![npm](https://img.shields.io/npm/v/porygon2?style=flat-square)]() 
 
 
 ## Installation
