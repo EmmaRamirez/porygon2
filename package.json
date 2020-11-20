@@ -44,7 +44,7 @@
     "jest": "^26.4.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "semantic-release": "^17.1.2",
+    "semantic-release": "^17.2.3",
     "ts-jest": "^26.4.1",
     "typescript": "^4.0.3",
     "typestyle": "^2.1.0"
